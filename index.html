@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main class="main">
+        <div class="scoreboard">
+            <!--h2 is for the information about if you won, lost or tied
+                h3 is the message for the score what beat what
+                ex. Rock beats Scissors-->
+          <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+          <h3 class="score-message" id="scoreMessage">First to score 5 points wins the game</h3>
+          <!--This div visualizes the score-->
+          <div class="scores-container">
+            <div class="score-box">
+              <div class="sign" id="playerSign">❔</div>
+              <p class="score" id="playerScore">Player: 0</p>
+            </div>
+            <div class="score-box">
+              <div class="sign" id="computerSign">❔</div>
+              <p class="score" id="computerScore">Computer: 0</p>
+            </div>
+          </div>
+        </div>
+        <!--This div shows buttons on what can be played Rock, Paper or Scissors-->
+        <div class="buttons">
+          <button class="btn main-btn" id="rockBtn">
+            <div class="sign">✊</div>
+          </button>
+          <button class="btn main-btn" id="paperBtn">
+            <div class="sign">✋</div>
+          </button>
+          <button class="btn main-btn" id="scissorsBtn">
+            <div class="sign">✌</div>
+          </button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>By MalpaLord</p>
+    </footer>
+
+    <!--Game Over pop up-->
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+<script src="script.js"></script>
+</html>
